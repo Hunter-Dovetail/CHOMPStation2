@@ -293,6 +293,53 @@
 	to_chat(user, span_warning("This weapon is ineffective, it does no damage."))
 	.=..()
 
+<<<<<<< Updated upstream
+=======
+/mob/living/simple_mob/humanoid/eclipse/lunar/silvernoodle //Bouncing bullet extreme
+	name = "Lunar Eclipse Silver Serpent"
+	desc = "A hungry looking naga, their strange armor protecting them from ballistics and physical weaponry."
+	health = 100 //Old 40
+	maxHealth = 100
+	reload_max = 6
+	movement_cooldown = 1
+
+	icon_state = "eclipse_silver"
+	icon_living = "eclipse_silver"
+
+	projectiletype = /obj/item/projectile/bullet/pistol/medium/ap/eclipse
+
+	var/grenade_type = /obj/item/grenade/chem_grenade/teargas
+	var/grenade_timer = 20
+
+/mob/living/simple_mob/humanoid/eclipse/lunar/silvernoodle/should_special_attack(atom/A)
+	var/mob_count = 0				// Are there enough mobs to consider grenading?
+	var/turf/T = get_turf(A)
+	for(var/mob/M in range(T, 2))
+		if(M.faction == faction) 	// Don't grenade our friends
+			return FALSE
+		if(M in oview(src, special_attack_max_range))	// And lets check if we can actually see at least two people before we throw a grenade
+			if(!M.stat)			// Dead things don't warrant a grenade
+				mob_count ++
+	if(mob_count < 2)
+		return FALSE
+	else
+		return TRUE
+
+// Yes? Throw the grenade
+/mob/living/simple_mob/humanoid/eclipse/lunar/silvernoodle/do_special_attack(atom/A)
+	set waitfor = FALSE
+	set_AI_busy(TRUE)
+
+	var/obj/item/grenade/G = new grenade_type(get_turf(src))
+	if(istype(G))
+		G.throw_at(A, G.throw_range, G.throw_speed, src)
+		G.det_time = grenade_timer	//CHOMPEdit
+		G.activate(src)	//CHOMPEdit
+		special_attack_charges = max(special_attack_charges-1, 0)
+
+	set_AI_busy(FALSE)
+
+>>>>>>> Stashed changes
 /mob/living/simple_mob/humanoid/eclipse/lunar/shotgunner //wuff with shotgun
 	name = "Lunar Eclipse Shotgunner"
 	desc = "A Vulpkanin or the like in a red-purple flashing rigsuit, it defending them from physical damage of close and long ranges."
@@ -682,6 +729,70 @@
 	maxHealth = 1
 	faction = "eclipse"
 
+<<<<<<< Updated upstream
+=======
+/mob/living/simple_mob/humanoid/eclipse/solar/froststalker //teleporting stalker
+	name = "Solar Eclipse Froststalker"
+	health = 30
+	maxHealth = 30
+	desc = "A somewhat see through being wearing a burn resistaint coat."
+	melee_damage_lower = 20
+	melee_damage_upper = 20
+	attack_armor_pen = 30
+	special_attack_cooldown = 25 SECONDS
+	special_attack_min_range = 1
+	special_attack_max_range = 7
+	projectiletype = null
+	ai_holder_type = /datum/ai_holder/simple_mob/intentional/adv_dark_gygax
+	icon_state = "froststalker"
+	icon_living = "froststalker"
+	cold_resist = 1.0
+	melee_attack_delay = 2.5
+
+/mob/living/simple_mob/humanoid/eclipse/solar/froststalker/do_special_attack(atom/A)
+	// Teleport attack.
+	if(!A)
+		to_chat(src, span_warning("There's nothing to teleport to."))
+		return FALSE
+
+	var/list/nearby_things = range(1, A)
+	var/list/valid_turfs = list()
+
+	// All this work to just go to a non-dense tile.
+	for(var/turf/potential_turf in nearby_things)
+		var/valid_turf = TRUE
+		if(potential_turf.density)
+			continue
+		for(var/atom/movable/AM in potential_turf)
+			if(AM.density)
+				valid_turf = FALSE
+		if(valid_turf)
+			valid_turfs.Add(potential_turf)
+
+	if(!(valid_turfs.len))
+		to_chat(src, span_warning("There wasn't an unoccupied spot to teleport to."))
+		return FALSE
+
+	var/turf/target_turf = pick(valid_turfs)
+	var/turf/T = get_turf(src)
+
+	var/datum/effect/effect/system/spark_spread/s1 = new /datum/effect/effect/system/smoke_spread/frost
+	s1.set_up(5, 1, T)
+	var/datum/effect/effect/system/spark_spread/s2 = new /datum/effect/effect/system/smoke_spread
+	s2.set_up(5, 1, target_turf)
+
+
+	T.visible_message(span_notice("\The [src] vanishes!"))
+	s1.start()
+
+	forceMove(target_turf)
+	playsound(target_turf, 'sound/effects/phasein.ogg', 50, 1)
+	to_chat(src, span_notice("You teleport to \the [target_turf]."))
+
+	target_turf.visible_message(span_warning("\The [src] appears!"))
+	s2.start()
+
+>>>>>>> Stashed changes
 /mob/living/simple_mob/humanoid/eclipse/solar/cryomancer //Freezing slowdown unit
 	name = "Solar Eclipse Cryomancer"
 	desc = "A being wearing ice and burn resistaint armor."

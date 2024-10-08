@@ -41,6 +41,7 @@
 /datum/spawnpoint/fueldepot/New()
 	..()
 	turfs = GLOB.latejoin_fueldepot
+<<<<<<< Updated upstream
 
 /datum/spawnpoint/tyrspawn
 	display_name = "Tyr Wreckage"
@@ -50,3 +51,5 @@
 /datum/spawnpoint/tyrspawn/New()
 	..()
 	turfs = GLOB.latejoin_tyrvillage
+=======
+>>>>>>> Stashed changes

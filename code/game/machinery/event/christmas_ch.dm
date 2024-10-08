@@ -41,7 +41,11 @@
 			to_chat(usr,span_notice("You bind the sack, none can make off with it now!"))
 		else
 			anchored = 0
+<<<<<<< Updated upstream
 			to_chat(usr,span_notice("You unbind the sack, you can now drag it off. But so can anyone else!"))
+=======
+			to_chat(usr,"<span class='notice'>You unbind the sack, you can now drag it off. But so can anyone else!</span> ")
+>>>>>>> Stashed changes
 	else
 		to_chat(usr, span_warning("Only Santa can bind and unbind his sack!"))
 	return

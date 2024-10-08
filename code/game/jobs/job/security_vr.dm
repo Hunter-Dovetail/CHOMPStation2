@@ -22,7 +22,11 @@
 
 /datum/job/warden
 	pto_type = PTO_SECURITY
+<<<<<<< Updated upstream
 	dept_time_required = 60 // CHOMPEdit
+=======
+	dept_time_required = 20
+>>>>>>> Stashed changes
 	alt_titles = list(JOB_ALT_BRIG_SENTRY = /datum/alt_title/brig_sentry, JOB_ALT_ARMORY_SUPERINTENDENT = /datum/alt_title/armory_superintendent, JOB_ALT_MASTERATARMS = /datum/alt_title/master_at_arms)
 
 /datum/alt_title/brig_sentry

@@ -64,7 +64,11 @@
 		item_state = "[base_state]"
 		playsound(src, deactivation_sound, 75, 1)
 		if(istype(src, /obj/item/flame/lighter/supermatter) )
+<<<<<<< Updated upstream
 			user.visible_message(span_rose("You hear a quiet click, as [user] shuts the [src] without even looking at what they're doing."))
+=======
+			user.visible_message("<span class='rose'>You hear a quiet click, as [user] shuts the [src] without even looking at what they're doing.</span>")
+>>>>>>> Stashed changes
 		else
 			user.visible_message(span_notice("[user] quietly shuts the [src]."))
 
@@ -87,7 +91,11 @@
 			cig.attackby(src, user)
 		else
 			if(istype(src, /obj/item/flame/lighter/supermatter))
+<<<<<<< Updated upstream
 				cig.light(span_rose("[user] whips the [name] out and holds it for [M]."))
+=======
+				cig.light("<span class='rose'>[user] whips the [name] out and holds it for [M].</span>")
+>>>>>>> Stashed changes
 			else
 				cig.light(span_notice("[user] holds the [name] out for [M], and lights the [cig.name]."))
 	else
@@ -135,7 +143,11 @@
 		item_state = "[base_state]"
 		playsound(src, deactivation_sound, 75, 1)
 		if(istype(src, /obj/item/flame/lighter/supermatter/syndismzippo) )
+<<<<<<< Updated upstream
 			user.visible_message(span_rose("You hear a quiet click, as [user] shuts the [src] without even looking at what they're doing."))
+=======
+			user.visible_message("<span class='rose'>You hear a quiet click, as [user] shuts the [src] without even looking at what they're doing.</span>")
+>>>>>>> Stashed changes
 		else
 			user.visible_message(span_notice("[user] quietly shuts the [src]."))
 
@@ -158,7 +170,11 @@
 			cig.attackby(src, user)
 		else
 			if(istype(src, /obj/item/flame/lighter/supermatter/syndismzippo))
+<<<<<<< Updated upstream
 				cig.light(span_rose("[user] whips the [name] out and holds it for [M]."))
+=======
+				cig.light("<span class='rose'>[user] whips the [name] out and holds it for [M].</span>")
+>>>>>>> Stashed changes
 			else
 				cig.light(span_notice("[user] holds the [name] out for [M], and lights the [cig.name]."))
 	else
@@ -182,8 +198,13 @@
 		var/i = rand(1, 100)
 		switch(i)
 			if(1 to 22)
+<<<<<<< Updated upstream
 				to_chat(user, span_rose("[user] safely reveals the supermatter shard within the [src]!"))
 				user.visible_message(span_rose("You safely revealed the supermatter shard within the [src]!"))
+=======
+				to_chat(user, "<span class='rose'>[user] safely reveals the supermatter shard within the [src]!</span>")
+				user.visible_message("<span class='rose'>You safely revealed the supermatter shard within the [src]!</span>")
+>>>>>>> Stashed changes
 				if (user.get_left_hand() == src)
 					user.apply_damage(1, IRRADIATE, "l_hand")
 				else			// Even using this safely will irradiate you a tiny tiny bit.
@@ -303,7 +324,11 @@
 		item_state = "[base_state]"
 		playsound(src, deactivation_sound, 75, 1)
 		if (istype(src, /obj/item/flame/lighter/supermatter/expsmzippo))
+<<<<<<< Updated upstream
 			user.visible_message(span_rose("You hear a quiet click, as [user] closes the [src]."))
+=======
+			user.visible_message("<span class='rose'>You hear a quiet click, as [user] closes the [src].</span>")
+>>>>>>> Stashed changes
 		else
 			user.visible_message(span_notice("[user] quietly shuts the [src]."))
 
@@ -324,7 +349,11 @@
 			cig.attackby(src, user)
 		else
 			if (istype(src, /obj/item/flame/lighter/supermatter/expsmzippo))
+<<<<<<< Updated upstream
 				cig.light(span_rose("[user] whips the [name] out and holds it for [M]."))
+=======
+				cig.light("<span class='rose'>[user] whips the [name] out and holds it for [M].</span>")
+>>>>>>> Stashed changes
 			else
 				cig.light(span_notice("[user] holds the [name] out for [M], and lights the [cig.name]."))
 	else

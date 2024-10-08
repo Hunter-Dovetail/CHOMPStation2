@@ -160,7 +160,11 @@
 /obj/structure/closet/crate/secure/lootsafe/numberlock/attackby(obj/item/W as obj, mob/user as mob)
 	if(locked)
 		if (istype(W, /obj/item/multitool)) // Greetings Urist McProfessor, how about a nice game of cows and bulls?
+<<<<<<< Updated upstream
 			to_chat(user, span_notice("DECA-CODE LOCK ANALYSIS:"))
+=======
+			to_chat(user, "<span class='notice'>DECA-CODE LOCK ANALYSIS:</span>")
+>>>>>>> Stashed changes
 			if (attempts == 1)
 				to_chat(user, span_warning("* Anti-Tamper system will activate on the next failed access attempt."))
 			else
@@ -262,7 +266,11 @@
 /obj/structure/closet/crate/secure/lootsafe/devillock/attackby(obj/item/W as obj, mob/user as mob)
 	if(locked)
 		if (istype(W, /obj/item/multitool)) // Greetings Urist McProfessor, how about a nice game of cows and bulls?
+<<<<<<< Updated upstream
 			to_chat(user, span_notice("DECA-CODE LOCK ANALYSIS:"))
+=======
+			to_chat(user, "<span class='notice'>DECA-CODE LOCK ANALYSIS:</span>")
+>>>>>>> Stashed changes
 			if (attempts == 1)
 				to_chat(user, span_warning("* Anti-Tamper system will activate on the next failed access attempt."))
 			else

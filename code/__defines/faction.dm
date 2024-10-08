@@ -21,7 +21,10 @@
 
 #define FACTION_ALTEVIAN "altevian"
 #define FACTION_CULT "cult"
+<<<<<<< Updated upstream
 #define FACTION_ECLIPSE "eclipse" //CHOMPadd
+=======
+>>>>>>> Stashed changes
 #define FACTION_GLAMOUR "glamour"
 #define FACTION_PIRATE "pirate"
 #define FACTION_SHADEKIN "shadekin"
@@ -105,8 +108,11 @@
 #define FACTION_SUCCUBUS "succubus"
 #define FACTION_SWARMER "swarmer"
 #define FACTION_TEPPI "teppi"
+<<<<<<< Updated upstream
 #define FACTION_TYR "tyr" //CHOMPadd
 #define FACTION_TYR_ANT "tyr_ants" //CHOMPadd
+=======
+>>>>>>> Stashed changes
 #define FACTION_TUNNELCLOWN "tunnelclown"
 #define FACTION_WILD_ANIMAL "wild animal"
 #define FACTION_WOLFGIRL "wolfgirl"

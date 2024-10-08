@@ -490,7 +490,11 @@
 		goia_overlays["spike"],
 		goia_overlays["zorgoia_belly"],
 		goia_overlays["belly"]), ";")
+<<<<<<< Updated upstream
 	to_chat(src, span_notice("Exported style string is \" [output_style] \". Use this to get the same style in the future with import style"))
+=======
+	to_chat(src, "<span class='notice'>Exported style string is \" [output_style] \". Use this to get the same style in the future with import style</span>")
+>>>>>>> Stashed changes
 
 /mob/living/simple_mob/vore/zorgoia/proc/import_style()
 	set name = "Import style string"

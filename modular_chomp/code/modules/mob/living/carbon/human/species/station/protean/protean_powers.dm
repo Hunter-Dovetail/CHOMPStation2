@@ -366,7 +366,11 @@
 						S.OurRig.canremove = 1
 				P.reset_view()
 			else	//Make one if not
+<<<<<<< Updated upstream
 				to_chat(temporary_form, span_warning("Somehow, your RIG got disconnected from your species. This may have been caused by an admin heal. A new one has been created for you, contact a coder."))
+=======
+				to_chat(temporary_form, "<span class='warning'>Somehow, your RIG got disconnected from your species. This may have been caused by an admin heal. A new one has been created for you, contact a coder.</span>")
+>>>>>>> Stashed changes
 				new /obj/item/rig/protean(src,src)
 	else
 		to_chat(caller, span_warning("You must remain still to condense!"))
@@ -716,7 +720,11 @@
 		if(proteanlimbs.organ_tag == BP_HEAD)
 			continue
 		proteanlimbs.transparent = !proteanlimbs.transparent
+<<<<<<< Updated upstream
 	visible_message(span_notice("\The [src]'s internal composition seems to change."))
+=======
+	visible_message("<span class='notice'>\The [src]'s internal composition seems to change.</span>")
+>>>>>>> Stashed changes
 	update_icons_body()
 	update_hair()
 
@@ -736,7 +744,11 @@
 	for(var/obj/item/organ/external/proteanlimbs as anything in src.organs)
 		proteanlimbs.transparent = !proteanlimbs.transparent
 
+<<<<<<< Updated upstream
 	visible_message(span_notice("\The [src]'s internal composition seems to change."))
+=======
+	visible_message("<span class='notice'>\The [src]'s internal composition seems to change.</span>")
+>>>>>>> Stashed changes
 	update_icons_body()
 	update_hair()
 

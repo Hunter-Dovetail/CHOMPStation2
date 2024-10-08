@@ -411,7 +411,11 @@
 		return
 
 	if(user && user.a_intent == I_HELP && user.read_preference(/datum/preference/toggle/safefiring)) //regardless of what happens, refuse to shoot if help intent is on
+<<<<<<< Updated upstream
 		to_chat(user, span_warning("You refrain from firing your [src] as your intent is set to help."))
+=======
+		to_chat(user, "<span class='warning'>You refrain from firing your [src] as your intent is set to help.</span>")
+>>>>>>> Stashed changes
 		return
 
 	else

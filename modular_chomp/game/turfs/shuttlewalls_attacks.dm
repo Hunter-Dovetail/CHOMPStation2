@@ -410,4 +410,8 @@
 		return
 
 	else if(!istype(W,/obj/item/rcd) && !istype(W, /obj/item/reagent_containers))
+<<<<<<< Updated upstream
 		return attack_hand(user)
+=======
+		return attack_hand(user)
+>>>>>>> Stashed changes

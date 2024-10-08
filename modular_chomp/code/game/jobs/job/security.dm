@@ -1,6 +1,9 @@
+<<<<<<< Updated upstream
 /datum/job/hos
 	camp_protection = TRUE
 
+=======
+>>>>>>> Stashed changes
 /datum/job/brigphysician
 	title = JOB_BRIG_PHYSICIAN
 	flag = BRIGPHYS

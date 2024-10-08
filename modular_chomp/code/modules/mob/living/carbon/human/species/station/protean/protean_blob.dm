@@ -453,7 +453,11 @@
 // Helpers - Unsafe, WILL perform change.
 /mob/living/carbon/human/proc/nano_intoblob(force)
 	if(!force && !isturf(loc) && !loc == /obj/item/rig/protean)
+<<<<<<< Updated upstream
 		to_chat(src,span_warning("You can't change forms while inside something."))
+=======
+		to_chat(src,"<span class='warning'>You can't change forms while inside something.</span>")
+>>>>>>> Stashed changes
 		return
 	to_chat(src, span_notice("You rapidly disassociate your form."))
 	if(force || do_after(src,20,exclusive = TASK_ALL_EXCLUSIVE))

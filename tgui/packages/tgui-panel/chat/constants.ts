@@ -113,14 +113,22 @@ export const MESSAGE_TYPES = [
     name: 'Info',
     description: 'Non-urgent messages from the game and items',
     selector:
+<<<<<<< Updated upstream
       '.notice:not(.pm):not(.mentor), .adminnotice:not(.pm), .info, .cult, .alium, .infoplain, .announce, .hear, .smallnotice, .holoparasite, .boldnotice, .suicide, .unconscious, .filter_notice',
+=======
+      '.notice:not(.pm):not(.mentor), .adminnotice:not(.pm), .info, .sinister, .cult, .alium, .infoplain, .announce, .hear, .smallnotice, .holoparasite, .boldnotice, .suicide, .unconscious',
+>>>>>>> Stashed changes
   },
   {
     type: MESSAGE_TYPE_WARNING,
     name: 'Warnings',
     description: 'Urgent messages from the game and items',
     selector:
+<<<<<<< Updated upstream
       '.warning:not(.pm):not(.mentor), .boldwarning:not(.pm):not(.mentor), .critical, .userdanger, .alertsyndie, .warningplain, .sinister, .filter_warning',
+=======
+      '.warning:not(.pm):not(.mentor), .boldwarning:not(.pm):not(.mentor), .critical, .userdanger, .alertsyndie, .warningplain, .sinister',
+>>>>>>> Stashed changes
   },
   {
     type: MESSAGE_TYPE_DEADCHAT,
@@ -157,8 +165,12 @@ export const MESSAGE_TYPES = [
     type: MESSAGE_TYPE_COMBAT,
     name: 'Combat Log',
     description: 'Urist McTraitor has stabbed you with a knife!',
+<<<<<<< Updated upstream
     selector:
       '.danger, .attack, .disarm, .passive, .bolddanger, .filter_combat',
+=======
+    selector: '.danger, .attack, .disarm, .passive, .bolddanger',
+>>>>>>> Stashed changes
   },
   {
     type: MESSAGE_TYPE_CHATPRINT,
@@ -210,6 +222,10 @@ export const MESSAGE_TYPES = [
     type: MESSAGE_TYPE_ADMINLOG,
     name: 'Admin Log',
     description: 'ADMIN LOG: Urist McAdmin has jumped to coordinates X, Y, Z',
+<<<<<<< Updated upstream
+=======
+    selector: '.log_message, .filter_adminlog',
+>>>>>>> Stashed changes
     admin: true,
   },
   {
@@ -222,6 +238,8 @@ export const MESSAGE_TYPES = [
     type: MESSAGE_TYPE_DEBUG,
     name: 'Debug Log',
     description: 'DEBUG: SSPlanets subsystem Recover().',
+    selector:
+      '.filter_debuglogs, .debug_error, .debug_warning, .debug_info, .debug_debug, .debug_trace',
     admin: true,
   },
 ];

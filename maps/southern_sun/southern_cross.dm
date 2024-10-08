@@ -75,7 +75,10 @@
 	#include "overmap/planets/kara/aerostat/aerostat.dm" //This is an installation for Kara.
 	*/
 	#include "overmap/planets/thor/thor.dm"
+<<<<<<< Updated upstream
 	#include "overmap/planets/tyr/tyr.dm"
+=======
+>>>>>>> Stashed changes
 
 	//SPACE - Anything random in space
 	#include "overmap/space/fueldepot.dm" //This is a fuel depot in space.

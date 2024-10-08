@@ -33,7 +33,11 @@
 
 /obj/structure/filingcabinet/attackby(obj/item/P as obj, mob/user as mob)
 	if(istype(P, /obj/item/paper) || istype(P, /obj/item/folder) || istype(P, /obj/item/photo) || istype(P, /obj/item/paper_bundle))
+<<<<<<< Updated upstream
 		to_chat(user, span_notice("You put [P] in [src]."))
+=======
+		to_chat(user, "<span class='notice'>You put [P] in [src].</span>")
+>>>>>>> Stashed changes
 		user.drop_item()
 		P.loc = src
 		open_animation()
@@ -132,7 +136,11 @@
 					S = R
 					break
 			var/obj/item/paper/P = new /obj/item/paper(src)
+<<<<<<< Updated upstream
 			P.info = "<CENTER>" + span_bold("Security Record") + "</CENTER><BR>"
+=======
+			P.info = "<CENTER><B>Security Record</B></CENTER><BR>"
+>>>>>>> Stashed changes
 			P.info += "Name: [G.fields["name"]] ID: [G.fields["id"]]<BR>\nSex: [G.fields["sex"]]<BR>\nAge: [G.fields["age"]]<BR>\nFingerprint: [G.fields["fingerprint"]]<BR>\nPhysical Status: [G.fields["p_stat"]]<BR>\nMental Status: [G.fields["m_stat"]]<BR>"
 			P.info += "<BR>\n<CENTER>" + span_bold("Security Data") + "</CENTER><BR>\nCriminal Status: [S.fields["criminal"]]<BR>\n<BR>\nMinor Crimes: [S.fields["mi_crim"]]<BR>\nDetails: [S.fields["mi_crim_d"]]<BR>\n<BR>\nMajor Crimes: [S.fields["ma_crim"]]<BR>\nDetails: [S.fields["ma_crim_d"]]<BR>\n<BR>\nImportant Notes:<BR>\n\t[S.fields["notes"]]<BR>\n<BR>\n<CENTER>" + span_bold("Comments/Log") + "</CENTER><BR>"
 			var/counter = 1
@@ -168,7 +176,11 @@
 					break
 			if(M)
 				var/obj/item/paper/P = new /obj/item/paper(src)
+<<<<<<< Updated upstream
 				P.info = "<CENTER>" + span_bold("Medical Record") + "</CENTER><BR>"
+=======
+				P.info = "<CENTER><B>Medical Record</B></CENTER><BR>"
+>>>>>>> Stashed changes
 				P.info += "Name: [G.fields["name"]] ID: [G.fields["id"]]<BR>\nSex: [G.fields["sex"]]<BR>\nAge: [G.fields["age"]]<BR>\nFingerprint: [G.fields["fingerprint"]]<BR>\nPhysical Status: [G.fields["p_stat"]]<BR>\nMental Status: [G.fields["m_stat"]]<BR>"
 
 				P.info += "<BR>\n<CENTER>" + span_bold("Medical Data") + "</CENTER><BR>\nBlood Type: [M.fields["b_type"]]<BR>\nDNA: [M.fields["b_dna"]]<BR>\n<BR>\nMinor Disabilities: [M.fields["mi_dis"]]<BR>\nDetails: [M.fields["mi_dis_d"]]<BR>\n<BR>\nMajor Disabilities: [M.fields["ma_dis"]]<BR>\nDetails: [M.fields["ma_dis_d"]]<BR>\n<BR>\nAllergies: [M.fields["alg"]]<BR>\nDetails: [M.fields["alg_d"]]<BR>\n<BR>\nCurrent Diseases: [M.fields["cdi"]] (per disease info placed in log/comment section)<BR>\nDetails: [M.fields["cdi_d"]]<BR>\n<BR>\nImportant Notes:<BR>\n\t[M.fields["notes"]]<BR>\n<BR>\n<CENTER>" + span_bold("Comments/Log") + "</CENTER><BR>"

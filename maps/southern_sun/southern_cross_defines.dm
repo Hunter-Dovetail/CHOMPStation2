@@ -21,8 +21,12 @@ but they don't actually change anything about the load order
 #define Z_LEVEL_VR_REALM                10
 #define Z_LEVEL_FUELDEPOT				11
 #define Z_LEVEL_JUNGLE					12
+<<<<<<< Updated upstream
 #define Z_LEVEL_DEATH_VALLEY			13
 #define Z_LEVEL_GATEWAY					14
+=======
+#define Z_LEVEL_GATEWAY					13
+>>>>>>> Stashed changes
 
 //#define Z_LEVEL_STATION_MAINTS		//CHOMPedit Deck 0 maints removal due to new station.
 //#define Z_LEVEL_SURFACE_SKYLANDS		//Sky islands removal due to lack of use
@@ -111,7 +115,11 @@ but they don't actually change anything about the load order
 	unit_test_exempt_areas = list(/area/ninja_dojo, /area/shuttle/ninja)
 	unit_test_exempt_from_atmos = list(/area/SouthernCrossV2/Engineering/Telecomms_Network, /area/SouthernCrossV2/Security/Transit_Turrets)
 
+<<<<<<< Updated upstream
 	planet_datums_to_make = list(/datum/planet/sif,/datum/planet/thor, /datum/planet/tyr) //This must be added to load maps at round start otherwise they will have weather or sun.
+=======
+	planet_datums_to_make = list(/datum/planet/sif,/datum/planet/thor) //This must be added to load maps at round start otherwise they will have weather or sun.
+>>>>>>> Stashed changes
 
 	map_levels = list(
 			//Z_LEVEL_STATION_MAINTS, (Removed for new map. KAS)
@@ -127,8 +135,12 @@ but they don't actually change anything about the load order
 	lateload_z_levels = list(
 			list("VR World"),
 			list("Fuel Depot - Z1 Space"),
+<<<<<<< Updated upstream
 			list("Thor Surface"),
 			list("Desert Valley")
+=======
+			list("Thor Surface")
+>>>>>>> Stashed changes
 			//list("Kara Aerostat - Z1 Aerostat"), //Remove Kara Z layers
 			//list("Kara - Z1 Northern Star") //Remove Kara Z layers
 			)
@@ -299,12 +311,15 @@ but they don't actually change anything about the load order
 	name = "Thor Surface"
 	flags = MAP_LEVEL_PLAYER|MAP_LEVEL_SEALED
 	base_turf = /turf/simulated/floor/outdoors/rocks
+<<<<<<< Updated upstream
 
 /datum/map_z_level/southern_cross/valley
 	z = Z_LEVEL_DEATH_VALLEY
 	name = "Desert Valley"
 	flags = MAP_LEVEL_PLAYER|MAP_LEVEL_SEALED
 	base_turf = /turf/simulated/floor/outdoors/rocks
+=======
+>>>>>>> Stashed changes
 /*
 // Deck 0 Z-Level (Removed for new map. KAS)
 /datum/map_z_level/southern_cross/station/station_maintenance
@@ -360,11 +375,14 @@ but they don't actually change anything about the load order
 		Z_LEVEL_JUNGLE
 	)
 
+<<<<<<< Updated upstream
 /datum/planet/tyr
 	expected_z_levels = list(
 		Z_LEVEL_DEATH_VALLEY
 	)
 
+=======
+>>>>>>> Stashed changes
 /obj/effect/step_trigger/teleporter/bridge/east_to_west/Initialize()
 	teleport_x = src.x - 4
 	teleport_y = src.y

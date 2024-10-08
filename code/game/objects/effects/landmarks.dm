@@ -50,10 +50,13 @@
 			GLOB.latejoin_fueldepot += loc
 			delete_me = 1
 			return
+<<<<<<< Updated upstream
 		if("JoinLateTyrVillage")
 			GLOB.latejoin_tyrvillage += loc
 			delete_me = 1
 			return
+=======
+>>>>>>> Stashed changes
 		//CHOMPEdit End
 		if("JoinLateElevator")
 			latejoin_elevator += loc

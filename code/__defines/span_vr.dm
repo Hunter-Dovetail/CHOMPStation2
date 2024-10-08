@@ -47,7 +47,10 @@
 #define span_say(str) ("<span class='say'>" + str + "</span>")
 #define span_emote(str) ("<span class='emote'>" + str + "</span>")
 #define span_emote_subtle(str) ("<span class='emotesubtle'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_say(str) ("<span class='filter_say'>" + str + "</span>")
+=======
+>>>>>>> Stashed changes
 
 // Filtered as NPC messages
 #define span_npc_say(str) ("<span class='npcsay'>" + str + "</span>")
@@ -59,9 +62,19 @@
 // Unfiltered, only style!
 #define span_name(str) ("<span class='name'>" + str + "</span>")
 #define span_game(str) ("<span class='game'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_message(str) ("<span class='message'>" + str + "</span>") // TODO: This makes no sense, check it!
 #define span_notify(str) ("<span class='notify'>" + str + "</span>") // TODO: This makes no sense, check it!
 #define span_body(str) ("<span class='body'>" + str + "</span>")
+=======
+#define span_filter_say(str) ("<span class='filter_say'>" + str + "</span>")
+#define span_message(str) ("<span class='message'>" + str + "</span>") // TODO: This makes no sense, check it!
+#define span_notify(str) ("<span class='notify'>" + str + "</span>") // TODO: This makes no sense, check it!
+#define span_body(str) ("<span class='body'>" + str + "</span>")
+#define span_filter_warning(str) ("<span class='filter_warning'>" + str + "</span>")
+#define span_filter_combat(str) ("<span class='filter_combat'>" + str + "</span>")
+#define span_filter_notice(str) ("<span class='filter_notice'>" + str + "</span>")
+>>>>>>> Stashed changes
 
 // Filtered under combat!
 #define span_attack(str) ("<span class='attack'>" + str + "</span>")
@@ -69,7 +82,10 @@
 #define span_passive(str) ("<span class='passive'>" + str + "</span>")
 #define span_danger(str) ("<span class='danger'>" + str + "</span>")
 #define span_bolddanger(str) ("<span class='bolddanger'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_combat(str) ("<span class='filter_combat'>" + str + "</span>")
+=======
+>>>>>>> Stashed changes
 
 // Filtered under warning messages
 #define span_critical(str) ("<span class='critical'>" + str + "</span>")
@@ -77,7 +93,11 @@
 #define span_warning(str) ("<span class='warning'>" + str + "</span>")
 #define span_warningplain(str) ("<span class='warningplain'>" + str + "</span>")
 #define span_boldwarning(str) ("<span class='boldwarning'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_warning(str) ("<span class='filter_warning'>" + str + "</span>") // Close to warning plain, maybe replace
+=======
+#define span_sinister(str) ("<span class='sinister'>" + str + "</span>")
+>>>>>>> Stashed changes
 
 // FIltered under info
 #define span_info(str) ("<span class='info'>" + str + "</span>")
@@ -86,13 +106,20 @@
 #define span_unconscious(str) ("<span class='unconscious'>" + str + "</span>")
 #define span_hear(str) ("<span class='hear'>" + str + "</span>")
 #define span_notice(str) ("<span class='notice'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_notice(str) ("<span class='filter_notice'>" + str + "</span>") // Close to infoplain, maybe replace
+=======
+>>>>>>> Stashed changes
 #define span_boldnotice(str) ("<span class='boldnotice'>" + str + "</span>")
 #define span_adminnotice(str) ("<span class='adminnotice'>" + str + "</span>")
 #define span_alium(str) ("<span class='alium'>" + str + "</span>")
 #define span_cult(str) ("<span class='cult'>" + str + "</span>")
 
+<<<<<<< Updated upstream
 #define span_pnarrate(str) ("<span class='pnarrate'>" + str + "</span>")
+=======
+#define span_wingdings(str) ("<span class='wingdings'>" + str + "</span>") //CHOMPAdd
+>>>>>>> Stashed changes
 
 /* Direct communication spans */
 // Local pred / prey filter
@@ -158,21 +185,29 @@
 #define span_maroon(str) ("<span class='maroon'>" + str + "</span>")
 #define span_brown(str) ("<span class='brown'>" + str + "</span>")
 #define span_lightpurple(str) ("<span class='lightpurple'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_darkpink(str) ("<span class='darkpink'>" + str + "</span>")
+=======
+#define span_darkpink(str) ("<span class='darkpurple'>" + str + "</span>")
+>>>>>>> Stashed changes
 #define span_rose(str) ("<span class='rose'>" + str + "</span>")
 
 /* System and Debug */
 // System filter
 #define span_boldannounce(str) ("<span class='boldannounce'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_world(str) ("<span class='world'>" + str + "</span>") // Bold system messages, use this for important world messages to make sure players can't filter them!
 #define span_filter_system(str) ("<span class='filter_system'>" + str + "</span>") // Plain system filter
 #define span_sinister(str) ("<span class='sinister'>" + str + "</span>")
+=======
+>>>>>>> Stashed changes
 
 // Unfiltered
 #define span_prefix(str) ("<span class='prefix'>" + str + "</span>")
 #define span_admin(str) ("<span class='admin'>" + str + "</span>")
 #define span_linkOn(str) ("<span class='linkOn'>" + str + "</span>")
 #define span_linkOff(str) ("<span class='linkOff'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_pray(str) ("<span class='filter_pray'>" + str + "</span>") // (Uses the chat message type directly)
 
 // Admin log filters
@@ -181,6 +216,15 @@
 
 // Attack log filter
 #define span_filter_attacklog(str) ("<span class='filter_attacklog'>" + str + "</span>") // (Uses the chat message type directly)
+=======
+#define span_filter_system(str) ("<span class='filter_system'>" + str + "</span>")
+#define span_filter_pm(str) ("<span class='filter_pm'>" + str + "</span>")
+#define span_filter_pray(str) ("<span class='filter_pray'>" + str + "</span>")
+
+// Admin log filters
+#define span_log_message(str) ("<span class='log_message'>" + str + "</span>")
+#define span_filter_adminlog(str) ("<span class='filter_adminlog'>" + str + "</span>")
+>>>>>>> Stashed changes
 
 // Debug filter
 #define span_debug_error(str) ("<span class='debug_error'>" + str + "</span>")
@@ -188,7 +232,11 @@
 #define span_debug_info(str) ("<span class='debug_info'>" + str + "</span>")
 #define span_debug_debug(str) ("<span class='debug_debug'>" + str + "</span>")
 #define span_debug_trace(str) ("<span class='debug_trace'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_debuglogs(str) ("<span class='filter_debuglogs'>" + str + "</span>") // (Uses the chat message type directly)
+=======
+#define span_filter_debuglogs(str) ("<span class='filter_debuglogs'>" + str + "</span>")
+>>>>>>> Stashed changes
 
 /* Admin only usage */
 // Admin pm filter
@@ -196,7 +244,10 @@
 #define span_adminhelp(str) ("<span class='adminhelp'>" + str + "</span>")
 #define span_admin_pm_notice(str) ("<span class='pm notice'>" + str + "</span>")
 #define span_admin_pm_warning(str) ("<span class='pm warning'>" + str + "</span>")
+<<<<<<< Updated upstream
 #define span_filter_pm(str) ("<span class='filter_pm'>" + str + "</span>")
+=======
+>>>>>>> Stashed changes
 
 // Mentor pm filter
 #define span_mentor(str) ("<span class='mentor'>" + str + "</span>")
@@ -222,10 +273,13 @@
 
 #define span_giant(str) "<font size='5'>" + str + "</font>"
 
+<<<<<<< Updated upstream
 #define span_giganteus(str) "<font size='6'>" + str + "</font>"
 
 #define span_massive(str) "<font size='7'>" + str + "</font>"
 
+=======
+>>>>>>> Stashed changes
 #define span_narsie(str) "<font size='15'>" + str + "</font>"
 
 #define span_cascade(str) "<span style='font-size:22pt'>" + str + "</span>"
@@ -238,6 +292,9 @@
 
 // Links!
 #define span_linkify(str) ("<span class='linkify'>" + str + "</span>")
+<<<<<<< Updated upstream
 
 // Just used downstream
 #define span_wingdings(str) ("<span class='wingdings'>" + str + "</span>")
+=======
+>>>>>>> Stashed changes

@@ -495,7 +495,11 @@
 	if(!R || assimilated_rig)
 		return
 	if(istype(R, /obj/item/rig/protean))
+<<<<<<< Updated upstream
 		to_chat(user, span_warning("The world is not ready for such a technological singularity."))
+=======
+		to_chat(user, "<span class='warning'>The world is not ready for such a technological singularity.</span>")
+>>>>>>> Stashed changes
 		return
 	to_chat(user, span_notice("You assimilate the [R] into the [src]. Mimicking its stats and appearance."))
 	for(var/obj/item/piece in list(gloves,helmet,boots,chest))

@@ -10,7 +10,11 @@
 	info = "They don't make you kill people. There, we said it. Now get back to work!"
 
 /obj/item/paper/pamphlet/gateway
+<<<<<<< Updated upstream
 	info = 	span_bold("Welcome to the Nanotrasen Gateway project...") + "<br>\
+=======
+	info = "<b>Welcome to the Nanotrasen Gateway project...</b><br>\
+>>>>>>> Stashed changes
 			Congratulations! If you're reading this, you and your superiors have decided that you're \
 			ready to commit to a life spent colonising the rolling hills of far away worlds. You \
 			must be ready for a lifetime of adventure, a little bit of hard work, and an award \

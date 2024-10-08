@@ -14,5 +14,10 @@
 				if("Cancel")
 					return
 		else if (istype(W, /obj/item/card/id) && src.pai.idaccessible == 0)
+<<<<<<< Updated upstream
 			to_chat(user, span_notice("[src] is not accepting access modifications at this time."))
 			return
+=======
+			to_chat(user, "<span class='notice'>[src] is not accepting access modifications at this time.</span>")
+			return
+>>>>>>> Stashed changes

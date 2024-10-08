@@ -1,7 +1,11 @@
 /datum/job/captain
 	disallow_jobhop = TRUE
 	pto_type = PTO_CIVILIAN
+<<<<<<< Updated upstream
 	dept_time_required = 200 //Pending something more complicated - CHOMPEdit
+=======
+	dept_time_required = 80 //Pending something more complicated
+>>>>>>> Stashed changes
 	alt_titles = list(JOB_ALT_OVERSEER= /datum/alt_title/overseer, JOB_ALT_FACILITY_DIRECTOR = /datum/alt_title/facility_director, JOB_ALT_CHIEF_SUPERVISOR = /datum/alt_title/chief_supervisor,
 						JOB_ALT_CAPTAIN = /datum/alt_title/captain)
 

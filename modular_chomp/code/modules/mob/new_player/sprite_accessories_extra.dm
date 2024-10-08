@@ -342,6 +342,19 @@
 	body_parts = list(BP_HEAD)
 	hide_body_parts = list(BP_HEAD)
 
+<<<<<<< Updated upstream
+=======
+/datum/sprite_accessory/marking/ch/hippo_head
+	name = "full hippo head"
+<<<<<<< HEAD
+	icon_state = "hippo_head-head"
+=======
+	icon_state = "hippo_head"
+>>>>>>> Hunter-Dovetail/master
+	body_parts = list(BP_HEAD)
+	color_blend_mode = ICON_MULTIPLY
+
+>>>>>>> Stashed changes
 // TEETH //
 
 /datum/sprite_accessory/marking/ch/xenomorph/xeno_teeth

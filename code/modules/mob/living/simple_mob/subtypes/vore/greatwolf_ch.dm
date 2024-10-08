@@ -108,7 +108,11 @@
 		if(!has_AI())//No autobarf on player control.
 			return
 		if(istype(O, /obj/item/reagent_containers/food/snacks/donut) && istype(src, /mob/living/simple_mob/vore/greatwolf/black))
+<<<<<<< Updated upstream
 			to_chat(user,span_notice("The huge wolf begrudgingly accepts your offer in exchange for it's catch."))
+=======
+			to_chat(user,"<span class='notice'>The huge wolf begrudgingly accepts your offer in exchange for it's catch.</span>")
+>>>>>>> Stashed changes
 			release_vore_contents()
 		else if(prob(2)) //Small chance to get prey out from white doggos
 			to_chat(user,span_notice("The huge wolf accepts your offer for their catch."))
